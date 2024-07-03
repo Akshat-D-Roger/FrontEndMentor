@@ -1,0 +1,48 @@
+/* Box sizing border box means that padding and margin is included in box's width and height */
+*{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* height 100vh is full viewport height and height 100% means 100% of parent. Have used width 100% and not 100vw as if vertical scrollbar  shows up a horizontal scrollbar will also come */
+.bodyClass{
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  align-content: center;
+  height:100svh;
+  width:100%
+  }
+
+.container{
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1em;
+  height: 60%;
+  width: 80vw;
+  max-width:300px;
+  text-align: center;
+  box-shadow: 0px 5px 10px grey;
+}
+.container img{
+  border-radius:8px;
+  width: 100%;
+  height: 63%;
+}
+p{
+  color: hsl(220, 15%, 55%); 
+  font-weight: 400; 
+  font-size: 1em;
+}
+h3{
+  color: hsl(218, 44%, 22%); 
+  font-weight: 700;
+  font-size: 1.5em;
+} 
